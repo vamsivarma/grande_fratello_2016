@@ -20,12 +20,12 @@ import org.apache.lucene.index.Terms;
 import org.apache.lucene.index.TermsEnum;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.BooleanQuery;
-import org.apache.lucene.search.NumericRangeQuery;
-import org.apache.lucene.search.Query;
+
+
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.store.Directory;
+
 import org.apache.lucene.util.BytesRef;
 import twitter4j.TwitterException;
 import sbn.gf.entities.TweetTerm;

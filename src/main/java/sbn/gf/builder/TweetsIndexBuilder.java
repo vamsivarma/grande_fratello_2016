@@ -181,38 +181,6 @@ public class TweetsIndexBuilder extends IndexBuilder {
                             
                     JSONObject tJSON = new JSONObject(sw.getRawJson()); 
                     
-                    /*if(fCounter <= 1000) {
-                        
-                        fCounter++;
-                        
-                        JSONObject tJSON = new JSONObject(sw.getRawJson()); 
-                        
-                        String rtUser = "";
-                        
-                        long rtId = new Long(0);
-
-                    
-
-                        if (!tJSON.isNull("in_reply_to_screen_name")) {
-                            rtUser = (String) tJSON.get("in_reply_to_screen_name");
-                            rtId = Long.parseLong((String) tJSON.get("in_reply_to_user_id_str"));
-                            
-                            System.out.println("Tweet is retweeted");
-                            
-                            System.out.println(rtUser +  "   " + rtId);
-                        }
-                        
-                        
-                        
-                        // try-with-resources statement based on post comment below :)
-                        try (FileWriter tFile = new FileWriter( "file" + fCounter + ".txt" )) {
-                            tFile.write(sw.getRawJson());
-                            System.out.println("Successfully Copied JSON Object to File...");
-                            //System.out.println("\nJSON Object: " + obj);
-                        }
-                    
-                    }*/
-                    
                     // System.out.println(sw.getRawJson());
                     
                     this.userId.setLongValue(sw.getStatus().getUser().getId());

@@ -158,39 +158,33 @@ public class SOIAnalysis {
         
         int ucCounter = 0;
         
-        //try {
-            
-            // Count the nodes for each label
-            for (int curLabel : lpaLabels) {
-
-                if(curLabel <= 0) {
-                    // If the node label is either 0 or -1 that means it is un classified
-                    ucCounter++;
-                } else {
-                    // If it is greater than or equal to 1 then it is a categorized label
-                    // Since arraylist index starts from 
-                    int curIndex = curLabel - 1;
-                    int curC = lpaList.get(curIndex);
-                    lpaList.set(curIndex, curC + 1);
-                }
-
-            }
         
-            System.out.println("----------" +  rType +"----------");
             
-            //System.out.println("P List size: " + p.pList.size());
+        // Count the nodes for each label
+        for (int curLabel : lpaLabels) {
 
-            for(int i=0; i < p.pList.size(); i++) {
-                System.out.println(p.pList.get(i) + " has " + lpaList.get(i) + " " +  rType.toLowerCase());
+            if(curLabel <= 0) {
+                // If the node label is either 0 or -1 that means it is un classified
+                ucCounter++;
+            } else {
+                // If it is greater than or equal to 1 then it is a categorized label
+                // Since arraylist index starts from 
+                int curIndex = curLabel - 1;
+                int curC = lpaList.get(curIndex);
+                lpaList.set(curIndex, curC + 1);
             }
 
-            System.out.println("UNCLASSIFIED " + rType.toLowerCase() + ": " +  ucCounter);
-        
-        
-        //} catch(Exception e) {
-        //    System.out.println(e);
-        //}
-        
+        }
+
+        System.out.println("----------" +  rType +"----------");
+
+        //System.out.println("P List size: " + p.pList.size());
+
+        for(int i=0; i < p.pList.size(); i++) {
+            System.out.println(p.pList.get(i) + " has " + lpaList.get(i) + " " +  rType.toLowerCase());
+        }
+
+        System.out.println("UNCLASSIFIED " + rType.toLowerCase() + ": " +  ucCounter);
         
     }
     

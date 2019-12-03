@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * This entity represents the supporter, someone who mentioned politicians, used structures 
- * discovered during the analisys and/or use yes and/or no well known expression 
+ * discovered during the analysis and/or use yes and/or no well known expression 
  * @author Vamsi Gunturi
  */
 public class Supporter {

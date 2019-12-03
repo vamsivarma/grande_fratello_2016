@@ -178,7 +178,7 @@ public class TemporalAnalysis {
             
             termCounter++;
             
-            if(termCounter <= 10) {
+            //if(termCounter <= 10) {
                 
                 //System.out.println("---------------------------------------");      
                 //System.out.println("Term: " + pT.getWord());
@@ -186,7 +186,7 @@ public class TemporalAnalysis {
                 //System.out.println("Frequency: " + pT.getFrequency());
                 //System.out.println("---------------------------------------");
             
-            }
+            //}
                
         }
         

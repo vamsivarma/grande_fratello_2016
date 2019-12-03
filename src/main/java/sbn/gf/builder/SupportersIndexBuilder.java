@@ -152,6 +152,10 @@ public class SupportersIndexBuilder extends IndexBuilder {
             Map<String, Integer> pMMap = new HashMap<String, Integer>();
             
             
+            // pMentioned, cUsed, eUsed
+            List<Integer> scList = Arrays.asList(0,0,0);
+            
+            
             // @TODO: Need to properly optimize the code in this loop
             for (String i : p.pTMap.keySet()) {
                 
@@ -198,6 +202,9 @@ public class SupportersIndexBuilder extends IndexBuilder {
                         updateMentioned(supporter, curIndex);
                         
                     } else {
+                        
+                        int mc = scList.get(0);
+                        scList.set(0, mc + 1);
                         
                         // Otherwise create a new supporter 
                         Supporter supporter = new Supporter(tim.ir.document(doc.doc).get("userId"), tim.ir.document(doc.doc).get("name"));
@@ -252,6 +259,10 @@ public class SupportersIndexBuilder extends IndexBuilder {
                              updateConstructions(supporter, curIndex);
                             
                          } else {
+                             
+                             int cc = scList.get(1);
+                             scList.set(1, cc + 1);
+                             
                              Supporter supporter = new Supporter(tim.ir.document(doc.doc).get("userId"), tim.ir.document(doc.doc).get("name"));
                              
                              updateConstructions(supporter, curIndex);
@@ -286,6 +297,10 @@ public class SupportersIndexBuilder extends IndexBuilder {
                              updateConstructions(supporter, curIndex);
                              
                          } else {
+                             
+                             int cc = scList.get(1);
+                             scList.set(1, cc + 1);
+                             
                              Supporter supporter = new Supporter(tim.ir.document(doc.doc).get("userId"), tim.ir.document(doc.doc).get("name"));
                              
                              updateConstructions(supporter, curIndex);
@@ -312,6 +327,9 @@ public class SupportersIndexBuilder extends IndexBuilder {
                          updateExpressions(supporter, curIndex);
                      
                      } else {
+                         
+                         int ec = scList.get(2);
+                         scList.set(2, ec + 1);
                      
                          Supporter supporter = new Supporter(tim.ir.document(doc.doc).get("userId"), tim.ir.document(doc.doc).get("name"));
                          
@@ -325,6 +343,7 @@ public class SupportersIndexBuilder extends IndexBuilder {
                 
             }
         
+            System.out.println("Supporters added individually from m, c, e: " + scList);
             
             // Return supporters
             return supporters;

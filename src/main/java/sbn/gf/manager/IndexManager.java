@@ -82,41 +82,6 @@ public abstract class IndexManager {
             // Set index params (path, ir and searcher
             Query q;
             
-            
-            /*if (fieldValue instanceof String) {
-                q = new TermQuery(new Term(fieldName, fieldValue));
-            } else {
-                BytesRef ref = new BytesRef();
-                NumericUtils.longToPrefixCoded(Long.parseLong(fieldValue), 0, ref);
-                q = new TermQuery(new Term(fieldName, ref));
-            }
-
-            TopDocs top = searcher.search(q, range);
-            ScoreDoc[] hits = top.scoreDocs;
-
-            if (hits.length == 0) {
-                return null;
-            }
-
-            int resultArraySize = 0;
-            // calculate the size of the result array
-            if (range < hits.length) {
-                resultArraySize = range;
-            } else {
-                resultArraySize = hits.length;
-            }
-            
-            // Collect the documents inside the query results
-            ArrayList<Document> results = new ArrayList<>();
-
-            for (ScoreDoc entry : hits) {
-                Document doc = searcher.doc(entry.doc);
-                results.add(doc);
-            }
-
-            return results;*/
-            
-            
             //System.out.println("Current index path: " + this.indexPath);
             
             // if the field is a LongField
