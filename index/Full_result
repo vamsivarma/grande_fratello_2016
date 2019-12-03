@@ -1,0 +1,154 @@
+cd /Users/vamsigunturi/Desktop/SBN/grande_fratello_2016; JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home "/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/mvn" "-Dexec.args=-Xms64m -Xmx8192m -classpath %classpath sbn.gf.Bootstrap" -Dexec.executable=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building GrandeFratello2016 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ GrandeFratello2016 ---
+Adding stop words to the Hashset....
+index/AllTweetsIndex: Index already created!
+TOTAL TWEETS INDEXED: 18850000
+index/AMI: Index already created!
+index/VMI: Index already created!
+index/ECI: Index already created!
+index/ADI: Index already created!
+index/PPI: Index already created!
+Eps reached. Num iter = 2
++Cluster N°1:
++-+ Nmuber of elements: 326
+
++Cluster N°2:
++-+ Nmuber of elements: 7
+
+22:52:21.299 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.027s
+22:52:21.307 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.005s
+22:52:21.467 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.165s
+22:52:21.468 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.001s
+22:52:21.470 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.002s
+22:52:21.471 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.003s
+Eps reached. Num iter = 2
++Cluster N°1:
++-+ Nmuber of elements: 979
+
++Cluster N°2:
++-+ Nmuber of elements: 21
+
+22:52:32.213 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.024s
+22:52:32.215 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.002s
+22:52:32.387 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.174s
+22:52:32.392 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.002s
+22:52:32.393 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+22:52:32.398 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.006s
+Eps reached. Num iter = 3
++Cluster N°1:
++-+ Nmuber of elements: 887
+
++Cluster N°2:
++-+ Nmuber of elements: 113
+
+22:52:35.681 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.02s
+22:52:35.682 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+22:52:35.943 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.262s
+22:52:36.035 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.006s
+22:52:36.035 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.0s
+22:52:36.059 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.024s
+Eps reached. Num iter = 4
++Cluster N°1:
++-+ Nmuber of elements: 697
+
++Cluster N°2:
++-+ Nmuber of elements: 303
+
+22:52:39.804 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.013s
+22:52:39.805 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+22:52:39.992 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.188s
+22:52:40.690 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.009s
+22:52:40.690 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.0s
+22:52:40.741 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.051s
+Eps reached. Num iter = 4
++Cluster N°1:
++-+ Nmuber of elements: 627
+
++Cluster N°2:
++-+ Nmuber of elements: 373
+
+22:52:43.442 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.015s
+22:52:43.443 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+22:52:43.542 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.1s
+22:52:44.477 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.008s
+22:52:44.478 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+22:52:44.539 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.062s
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Supporters added individually from m, c, e: [971, 43588, 3507]
+Total supporters: 48071
+Supporter votes: [19578, 5132, 14648, 8100, 608, 0]
+Total supporters: 48071
+Number of unique supporters: 48071
+Total supporters: 48071
+Supporters not found: 35844
+Pamela Prati has 401 supporters
+Valeria Marini has 1709 supporters
+Andrea Damante has 5286 supporters
+Alessia Macari has 5849 supporters
+Elenoire Casalegno has 5911 supporters
+--------------- Computing HITS -----------------
+22:54:27.315 [main] TRACE it.stilo.g.algo.HubnessAuthority - 1.455s	61
+No of authorities: 19156
+Authorities not found: 0
+Pamela Prati has 199 authorities
+Valeria Marini has 754 authorities
+Andrea Damante has 1001 authorities
+Alessia Macari has 1001 authorities
+Elenoire Casalegno has 1001 authorities
+Hubs not found: 0
+Pamela Prati has 401 hubs
+Valeria Marini has 1001 hubs
+Andrea Damante has 1001 hubs
+Alessia Macari has 1001 hubs
+Elenoire Casalegno has 1001 hubs
+--------------- Applying Label propagation algorithm -----------------
+Initializing labels for supporters:
+22:56:13.941 [main] INFO  sbn.gf.algorithms.ComunityLPA - 0.626007185	s
+----------Supporters----------
+Alessia Macari has 5818 supporters
+Valeria Marini has 8736 supporters
+Elenoire Casalegno has 366790 supporters
+Andrea Damante has 8429 supporters
+Pamela Prati has 502 supporters
+UNCLASSIFIED supporters: 59919
+Initializing labels for hubs:
+22:56:14.742 [main] INFO  sbn.gf.algorithms.ComunityLPA - 0.770905029	s
+----------Hubs----------
+Alessia Macari has 1001 hubs
+Valeria Marini has 380976 hubs
+Elenoire Casalegno has 5996 hubs
+Andrea Damante has 3017 hubs
+Pamela Prati has 575 hubs
+UNCLASSIFIED hubs: 58629
+Initializing labels for authorities:
+22:56:16.018 [main] INFO  sbn.gf.algorithms.ComunityLPA - 1.265830122	s
+----------Authorities----------
+Alessia Macari has 998 authorities
+Valeria Marini has 18930 authorities
+Elenoire Casalegno has 366787 authorities
+Andrea Damante has 4561 authorities
+Pamela Prati has 263 authorities
+UNCLASSIFIED authorities: 58655
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 3:59.589s
+Finished at: Tue Dec 03 22:56:16 CET 2019
+Final Memory: 11M/309M
+------------------------------------------------------------------------
