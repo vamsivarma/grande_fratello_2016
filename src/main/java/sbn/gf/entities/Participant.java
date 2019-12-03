@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sbn.gunturi.entities;
+package sbn.gf.entities;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import sbn.gunturi.manager.TweetsIndexManager;
+import sbn.gf.manager.TweetsIndexManager;
 
 /**
  *

@@ -1,4 +1,4 @@
-package sbn.gunturi.builder;
+package sbn.gf.builder;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,11 +20,11 @@ import org.apache.lucene.document.LongField;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.StoredField;
 import org.apache.lucene.search.ScoreDoc;
-import sbn.gunturi.entities.Participant;
+import sbn.gf.entities.Participant;
 import twitter4j.TwitterException;
-import sbn.gunturi.entities.Supporter;
-import sbn.gunturi.manager.SupportersIndexManager;
-import sbn.gunturi.manager.TweetsIndexManager;
+import sbn.gf.entities.Supporter;
+import sbn.gf.manager.SupportersIndexManager;
+import sbn.gf.manager.TweetsIndexManager;
 
 /**
  * Builder that creates index of supporters

@@ -1,4 +1,4 @@
-package sbn.gunturi.manager;
+package sbn.gf.manager;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -28,9 +28,9 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.util.BytesRef;
 import twitter4j.TwitterException;
-import sbn.gunturi.entities.TweetTerm;
-import sbn.gunturi.builder.TweetTermBuilder;
-import sbn.gunturi.builder.TweetsIndexBuilder;
+import sbn.gf.entities.TweetTerm;
+import sbn.gf.builder.TweetTermBuilder;
+import sbn.gf.builder.TweetsIndexBuilder;
 
 /**
  * This class manage the creation and the communication with indices of twitter messages
@@ -100,58 +100,7 @@ public class TweetsIndexManager extends IndexManager {
         return filList;
     }
 
-    /**
-     * Compute the distribution of the tweets using a stepsize as time interval
-     * @param stepSize time interval
-     * @return a list of two arrays: x values and y values
-     */
-    public ArrayList<long[]> getTweetDistro(long stepSize) {
-        // Define the arrays size
-        int distroSize = (int) (((max - min) / stepSize) + 1);
-
-        // Initializing the output list and the arrays to put into it
-        ArrayList<long[]> distro = new ArrayList<long[]>();
-        long[] x = new long[distroSize];
-        long[] y = new long[distroSize];
-
-        int i;
-        Directory dir;
-        
-        try {
-            // Set manager params
-            setReader(indexPath);
-            
-            Query q;
-            
-            // For each time interval
-            for (i = 0; i < distroSize; i++) {
-                // Define the bounds of the window of interest
-                long leftBound = min + i * stepSize;
-                long rightBound = min + (i + 1) * stepSize;
-
-                // Create the appropiate query
-                q = NumericRangeQuery.newLongRange("date", leftBound, rightBound, true, false);
-                // Execute the query
-                TopDocs top = searcher.search(q, 1000000);
-                // Save the right bound and the number of documents found by the query
-                x[i] = rightBound;
-                y[i] = top.totalHits;
-            }
-            
-            // Add the arrays to the list
-            distro.add(x);
-            distro.add(y);
-
-            // Return the list
-            return distro;
-
-        } catch (IOException ex) {
-            System.out.println("---> Problems with source files: IOException <---");
-            ex.printStackTrace();
-
-            return null;
-        }
-    }
+    
 
     /**
      * Search relevant terms in a list of fields using a specific regex and 

@@ -1,4 +1,4 @@
-package sbn.gunturi.manager;
+package sbn.gf.manager;
 
 import java.io.File;
 import java.io.IOException;

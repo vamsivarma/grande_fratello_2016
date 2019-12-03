@@ -1,4 +1,4 @@
-package sbn.gunturi.manager;
+package sbn.gf.manager;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.lucene.document.Document;
 import twitter4j.TwitterException;
-import sbn.gunturi.builder.SupportersIndexBuilder;
+import sbn.gf.builder.SupportersIndexBuilder;
 
 /**
  * This class manage the creation and the comunication with indices of

@@ -1,9 +1,9 @@
-package sbn.gunturi.algorithms;
+package sbn.gf.algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-import sbn.gunturi.entities.TweetTerm;
+import sbn.gf.entities.TweetTerm;
 
 /**
  * This class implements all the features and the phases of the K-means algorithm

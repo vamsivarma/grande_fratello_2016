@@ -1,4 +1,4 @@
-package sbn.gunturi.builder;
+package sbn.gf.builder;
 
 import org.apache.lucene.document.TextField;
 import java.io.BufferedReader;
@@ -31,8 +31,8 @@ import twitter4j.HashtagEntity;
 import twitter4j.JSONObject;
 import twitter4j.TwitterException;
 import twitter4j.UserMentionEntity;
-import sbn.gunturi.reader.StatusWrapper;
-import sbn.gunturi.manager.TweetsIndexManager;
+import sbn.gf.reader.StatusWrapper;
+import sbn.gf.manager.TweetsIndexManager;
 
 /**
  * Builder that creates index of Tweets

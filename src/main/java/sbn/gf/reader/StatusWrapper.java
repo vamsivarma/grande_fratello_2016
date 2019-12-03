@@ -1,4 +1,4 @@
-package sbn.gunturi.reader;
+package sbn.gf.reader;
 
 import java.util.Collections;
 import java.util.HashMap;

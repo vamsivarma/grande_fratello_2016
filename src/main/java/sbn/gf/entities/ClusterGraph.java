@@ -1,4 +1,4 @@
-package sbn.gunturi.entities;
+package sbn.gf.entities;
 
 import it.stilo.g.algo.ConnectedComponents;
 import it.stilo.g.algo.CoreDecomposition;

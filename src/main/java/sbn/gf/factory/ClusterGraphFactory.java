@@ -1,13 +1,13 @@
-package sbn.gunturi.factory;
+package sbn.gf.factory;
 
 import it.stilo.g.structures.WeightedUndirectedGraph;
 import it.stilo.g.util.NodesMapper;
 import static java.lang.Float.max;
 import java.util.ArrayList;
-import sbn.gunturi.algorithms.Kmeans;
-import sbn.gunturi.entities.TweetTerm;
-import sbn.gunturi.entities.ClusterGraph;
-import sbn.gunturi.manager.TweetsIndexManager;
+import sbn.gf.algorithms.Kmeans;
+import sbn.gf.entities.TweetTerm;
+import sbn.gf.entities.ClusterGraph;
+import sbn.gf.manager.TweetsIndexManager;
 
 /**
  * This Factory generate graphs starting from the clusterization of a list of terms

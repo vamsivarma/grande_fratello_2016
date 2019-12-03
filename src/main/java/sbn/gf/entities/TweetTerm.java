@@ -1,4 +1,4 @@
-package sbn.gunturi.entities;
+package sbn.gf.entities;
 
 /**
  * This entity represents all the attributes of tweet term for our amalysis

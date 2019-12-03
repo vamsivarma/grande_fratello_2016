@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sbn.gunturi.common;
+package sbn.gf.common;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,8 +12,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.apache.lucene.document.Document;
-import sbn.gunturi.manager.TweetsIndexManager;
+import sbn.gf.manager.TweetsIndexManager;
 
 /**
  *
@@ -104,6 +106,37 @@ public class utils {
         
         System.out.println("List count: " + list.size());
         return list;
+    }
+    
+    public static boolean isInteger(String s) {
+        return isInteger(s,10);
+    }
+
+    public static boolean isInteger(String s, int radix) {
+        if(s.isEmpty()) return false;
+        for(int i = 0; i < s.length(); i++) {
+            if(i == 0 && s.charAt(i) == '-') {
+                if(s.length() == 1) return false;
+                else continue;
+            }
+            if(Character.digit(s.charAt(i),radix) < 0) return false;
+        }
+        return true;
+    }
+    
+    public static ArrayList<Integer> initList() {
+        
+        //Initialize the counters of 5 participants with 0's
+        List<Integer> temp = Arrays.asList(0,0,0,0,0);
+         
+        //Create a 
+        ArrayList<Integer> initList = new ArrayList<Integer>();
+         
+        //Copy all items from list 1 to list 2
+        initList.addAll(temp);
+        
+        return initList;
+    
     }
     
 }

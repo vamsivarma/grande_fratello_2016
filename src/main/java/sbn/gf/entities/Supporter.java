@@ -1,4 +1,4 @@
-package sbn.gunturi.entities;
+package sbn.gf.entities;
 
 import java.util.ArrayList;
 import java.util.Arrays;

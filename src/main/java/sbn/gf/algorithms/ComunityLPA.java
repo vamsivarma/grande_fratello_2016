@@ -1,4 +1,4 @@
-package sbn.gunturi.algorithms;
+package sbn.gf.algorithms;
 
 import it.stilo.g.structures.WeightedGraph;
 import java.util.ArrayList;

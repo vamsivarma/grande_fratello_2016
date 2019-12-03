@@ -1,10 +1,10 @@
-package sbn.gunturi.builder;
+package sbn.gf.builder;
 
 import net.seninp.jmotif.sax.SAXException;
 import net.seninp.jmotif.sax.SAXProcessor;
 import net.seninp.jmotif.sax.alphabet.NormalAlphabet;
 import net.seninp.jmotif.sax.datastructure.SAXRecords;
-import sbn.gunturi.entities.TweetTerm;
+import sbn.gf.entities.TweetTerm;
 
 /**
  * This builder create a new TweetTerm computing also its SAX
