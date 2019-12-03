@@ -1,0 +1,187 @@
+cd /Users/vamsigunturi/Desktop/SBN/grande_fratello_2016; JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home "/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/mvn" "-Dexec.args=-Xms64m -Xmx8192m -classpath %classpath sbn.gunturi.Bootstrap" -Dexec.executable=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java process-classes org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building GrandeFratello2016 1.0-SNAPSHOT
+------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml
+         
+Downloaded: http://repo.maven.apache.org/maven2/org/twitter4j/twitter4j-core/maven-metadata.xml (2 KB at 5.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/twitter4j/twitter4j-stream/maven-metadata.xml
+            
+Downloaded: http://repo.maven.apache.org/maven2/org/twitter4j/twitter4j-stream/maven-metadata.xml (956 B at 15.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/maven-metadata.xml
+         
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/maven-metadata.xml (2 KB at 22.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/commons/commons-math3/maven-metadata.xml
+            
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/commons/commons-math3/maven-metadata.xml (603 B at 9.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/net/sf/trove4j/trove4j/maven-metadata.xml
+            
+Downloaded: http://repo.maven.apache.org/maven2/net/sf/trove4j/trove4j/maven-metadata.xml (483 B at 7.3 KB/sec)
+
+--- maven-resources-plugin:2.5:resources (default-resources) @ GrandeFratello2016 ---
+[debug] execute contextualize
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 0 resource
+
+--- maven-compiler-plugin:2.3.2:compile (default-compile) @ GrandeFratello2016 ---
+Compiling 17 source files to /Users/vamsigunturi/Desktop/SBN/grande_fratello_2016/target/classes
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ GrandeFratello2016 ---
+Adding stop words to the Hashset....
+index/AllTweetsIndex: Index already created!
+TOTAL TWEETS INDEXED: 18850000
+index/AllTweetsIndex
+AlessiaMacari1 1385
+Alessia Macari tweets count: 1385
+index/AllTweetsIndex
+ValeriaMariniVM 1200
+Valeria Marini tweets count: 1200
+index/AllTweetsIndex
+elenoirec 1094
+Elenoire Casalegno tweets count: 1094
+index/AllTweetsIndex
+AndreaDamante 262
+Andrea Damante tweets count: 262
+index/AllTweetsIndex
+PamelaPrati 119
+Pamela Prati tweets count: 119
+Eps reached. Num iter = 2
++Cluster N°1:
++-+ Nmuber of elements: 326
+
++Cluster N°2:
++-+ Nmuber of elements: 7
+
+08:32:32.850 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.037s
+08:32:32.859 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.006s
+08:32:33.011 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.159s
+08:32:33.012 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.001s
+08:32:33.012 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.0s
+08:32:33.014 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.002s
+Eps reached. Num iter = 2
++Cluster N°1:
++-+ Nmuber of elements: 979
+
++Cluster N°2:
++-+ Nmuber of elements: 21
+
+08:32:42.243 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.027s
+08:32:42.245 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.002s
+08:32:42.499 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.256s
+08:32:42.517 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.002s
+08:32:42.518 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+08:32:42.528 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.011s
+Eps reached. Num iter = 3
++Cluster N°1:
++-+ Nmuber of elements: 887
+
++Cluster N°2:
++-+ Nmuber of elements: 113
+
+08:32:47.379 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.027s
+08:32:47.386 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.005s
+08:32:47.705 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.326s
+08:32:47.790 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.006s
+08:32:47.792 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+08:32:47.826 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.036s
+Eps reached. Num iter = 4
++Cluster N°1:
++-+ Nmuber of elements: 697
+
++Cluster N°2:
++-+ Nmuber of elements: 303
+
+08:32:52.222 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.012s
+08:32:52.222 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.0s
+08:32:52.416 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.194s
+08:32:53.264 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.007s
+08:32:53.266 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.002s
+08:32:53.318 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.054s
+Eps reached. Num iter = 4
++Cluster N°1:
++-+ Nmuber of elements: 627
+
++Cluster N°2:
++-+ Nmuber of elements: 373
+
+08:32:56.462 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.016s
+08:32:56.463 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+08:32:56.578 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.116s
+08:32:57.676 [main] INFO  it.stilo.g.algo.ConnectedComponents - 0.012s
+08:32:57.677 [main] INFO  it.stilo.g.algo.WeightedDegreeRank - 0.001s
+08:32:57.772 [main] INFO  it.stilo.g.algo.CoreDecomposition - 0.096s
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Adding for Cores or CC:
+Adding for Expressions:
+Total supporters: 48071
+Supporter votes: [19578, 5132, 14648, 8100, 608, 0]
+Total supporters: 48071
+Number of unique supporters: 48071
+Total supporters: 48071
+08:36:04.038 [main] INFO  it.stilo.g.algo.SubGraph - 0.59s
+08:36:46.124 [main] INFO  it.stilo.g.algo.ConnectedComponents - 42.086s
+CONNECTED COMPONENTS DONE
+08:36:46.519 [main] INFO  it.stilo.g.algo.SubGraph - 0.389s
+Supporters not found: 35844
+Pamela Prati has 401 supporters
+Valeria Marini has 1709 supporters
+Andrea Damante has 5286 supporters
+Alessia Macari has 5849 supporters
+Elenoire Casalegno has 5911 supporters
+08:36:49.139 [main] TRACE it.stilo.g.algo.HubnessAuthority - 1.362s	61
+No of authorities: 19156
+Authorities not found: 0
+Pamela Prati has 199 authorities
+Valeria Marini has 754 authorities
+Andrea Damante has 1001 authorities
+Alessia Macari has 1001 authorities
+Elenoire Casalegno has 1001 authorities
+Hubs not found: 0
+Pamela Prati has 401 hubs
+Valeria Marini has 1001 hubs
+Andrea Damante has 1001 hubs
+Alessia Macari has 1001 hubs
+Elenoire Casalegno has 1001 hubs
+Initializing labels for supporters:
+08:39:07.176 [main] INFO  sbn.gunturi.algorithms.ComunityLPA - 0.70476841	s
+----------Supporters----------
+Alessia Macari has 5818 supporters
+Valeria Marini has 8259 supporters
+Elenoire Casalegno has 367074 supporters
+Andrea Damante has 8659 supporters
+Pamela Prati has 499 supporters
+UNCLASSIFIED supporters: 59885
+Initializing labels for hubs:
+08:39:08.002 [main] INFO  sbn.gunturi.algorithms.ComunityLPA - 0.809942245	s
+----------Hubs----------
+Alessia Macari has 1001 hubs
+Valeria Marini has 315168 hubs
+Elenoire Casalegno has 72145 hubs
+Andrea Damante has 2982 hubs
+Pamela Prati has 528 hubs
+UNCLASSIFIED hubs: 58370
+Initializing labels for authorities:
+08:39:08.728 [main] INFO  sbn.gunturi.algorithms.ComunityLPA - 0.7219681	s
+----------Authorities----------
+Alessia Macari has 998 authorities
+Valeria Marini has 38539 authorities
+Elenoire Casalegno has 348052 authorities
+Andrea Damante has 3544 authorities
+Pamela Prati has 448 authorities
+UNCLASSIFIED authorities: 58613
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 6:48.263s
+Finished at: Tue Dec 03 08:39:09 CET 2019
+Final Memory: 20M/218M
+------------------------------------------------------------------------
