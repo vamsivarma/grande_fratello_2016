@@ -11,7 +11,6 @@ import java.util.Set;
 /**
  * This entity represents a specific kind of graph related to the clusters 
  * made and some quantities of interest for this sub network
- * @author Vamsi Gunturi
  */
 public class ClusterGraph {
     

@@ -7,7 +7,6 @@ import sbn.gf.entities.TweetTerm;
 
 /**
  * This class implements all the features and the phases of the K-means algorithm
- * @author Vamsi Gunturi
  */
 public class Kmeans {
 

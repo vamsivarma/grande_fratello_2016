@@ -170,9 +170,19 @@ public class SupporterAnalysis {
             // Save authorities
             fileWriter = new FileWriter("output/authorities.txt");
             printWriter = new PrintWriter(fileWriter);
+            
 
             for (DoubleValues authority : authorities) {
-                printWriter.print(authority.index + "; " + authority.value + "\n");
+                int curIndex = authority.index;
+                ArrayList<Document> aMapper = sim.searchForField("id", nodeMapper.getNode(curIndex), 10);
+                if(!aMapper.isEmpty()) {
+                    
+                    Document supporter = aMapper.get(0);
+                    
+                    String name  = supporter.get("name");
+                    
+                    printWriter.print(authority.index + "; " + name + "; " + authority.value + "\n");
+                }
             }
             printWriter.close();
             fileWriter.close();
@@ -202,9 +212,22 @@ public class SupporterAnalysis {
             // Save all the hubs
             fileWriter = new FileWriter("output/hubs.txt");
             printWriter = new PrintWriter(fileWriter);
+            
+            
 
-            for (DoubleValues hub : hubs) {
-                printWriter.print(hub.index + "; " + hub.value + "\n");
+            for (DoubleValues hub : hubs) { 
+                
+                int curIndex = hub.index;
+                ArrayList<Document> hMapper = sim.searchForField("id", nodeMapper.getNode(curIndex), 10);
+                if(!hMapper.isEmpty()) {
+
+                    Document supporter = hMapper.get(0);
+
+                    String name  = supporter.get("name");
+
+                    printWriter.print(hub.index + "; " + name + "; " + hub.value + "\n");
+                }
+                
             }
             printWriter.close();
 

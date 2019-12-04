@@ -11,7 +11,6 @@ import sbn.gf.manager.TweetsIndexManager;
 
 /**
  * This Factory generate graphs starting from the clusterization of a list of terms
- * @author Vamsi Gunturi
  */
 public class ClusterGraphFactory {
     // Number of clusters
