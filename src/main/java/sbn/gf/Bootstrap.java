@@ -1,18 +1,12 @@
 package sbn.gf;
 
 import java.io.IOException;
-import sbn.gf.entities.Participant;
-
 
 /**
  * Bootstrap point for the application 
  * @author Vamsi Gunturi
  */
 public class Bootstrap {
-    
-    private static Participant p = new Participant();
-
-    
     
     /**
      * Main method from which the whole analysis starts 
